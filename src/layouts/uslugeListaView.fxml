@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="413.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UslugeListView">
+   <children>
+      <Button fx:id="addBtn" layoutX="222.0" layoutY="355.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="95.0" text="Dodaj" />
+      <TableView fx:id="table" layoutX="27.0" layoutY="31.0" prefHeight="303.0" prefWidth="335.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="210.0" text="Naziv" />
+          <TableColumn fx:id="priceCol" prefWidth="124.0" text="Cijena" />
+        </columns>
+      </TableView>
+      <TextField fx:id="amount" layoutX="105.0" layoutY="352.0" prefHeight="31.0" prefWidth="82.0" promptText="1" />
+      <Label layoutX="55.0" layoutY="359.0" text="Količina:" />
+   </children>
+</AnchorPane>
